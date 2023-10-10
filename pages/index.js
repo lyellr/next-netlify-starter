@@ -77,7 +77,7 @@ export default function Home() {
             );
           })}
         </div>
-        <div className="flex flex-wrap justify-center mt-0 mb-40 ">
+        <div className="flex flex-wrap justify-center pb-10">
           <Song name='GIMME' id='gimme' artist='Brooke Howard' spotify='https://orcd.co/gimme' />
           {songs.map((song) => {
           return (
