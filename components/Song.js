@@ -12,7 +12,7 @@ export default function Song({ name, id, artist, spotify }) {
                     width={400}
                     height={400}
                     alt={name}
-                    className="cursor-pointer hover:shadow-xl transition duration-500 ease-in-out transform hover:scale-105"
+                    className="cursor-pointer hover:shadow-xl transition duration-500 ease-in-out transform hover:scale-105 rounded-sm"
                 />
             </a>
         </div>
