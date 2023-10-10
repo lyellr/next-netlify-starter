@@ -25,7 +25,7 @@ export default function Home() {
   ]
 
   return (
-    <div className="container max-w-none mt-20">
+    <div className="container mt-20 max-w-screen-2xl m-auto">
       <Head>
         <title>Brooke Howard</title>
         <link rel="icon" href="/favicon.ico" />
@@ -77,7 +77,7 @@ export default function Home() {
             );
           })}
         </div>
-        <div className="flex flex-wrap justify-center mt-0 mb-40">
+        <div className="flex flex-wrap justify-center mt-0 mb-40 ">
           <Song name='GIMME' id='gimme' artist='Brooke Howard' spotify='https://orcd.co/gimme' />
           {songs.map((song) => {
           return (
