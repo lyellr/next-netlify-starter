@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <div className="justify-center flex flex-wrap">
+    <div className="justify-center flex flex-wrap pl-10 pr-10">
     <Image
         src={'/../public/images/brooke_sig.png'}
         width={400}
