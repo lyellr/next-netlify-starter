@@ -28,6 +28,9 @@ export default function Home() {
     <div className="container mt-20 max-w-screen-2xl m-auto">
       <Head>
         <title>Brooke Howard</title>
+        <meta name="title" content="Brooke Howard" />
+        <meta name="description" content="Brooke Howard is an artist based in Los Angeles, CA." />
+
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
