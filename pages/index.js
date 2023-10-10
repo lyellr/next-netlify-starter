@@ -19,9 +19,9 @@ export default function Home() {
 
   const socials = [
     { name: 'Instagram', id: 'instagram', link: 'https://www.instagram.com/brocklee/' },
-    { name: 'Tik-Tok', id: 'tiktok', link: 'https://www.tiktok.com/@itsbrookehoward?_t=8gOr6fnFbCw&_r=1' },
     { name: 'Spotify', id: 'spotify', link: 'https://open.spotify.com/artist/2LvxnjW2spHC23Ue7WUMiH?si=OZI4a7eGQ-iPHlZ4StujUw'},
-    { name: 'Apple Music', id: 'applemusic', link: 'https://music.apple.com/us/artist/brooke-howard/1555424708'}
+    { name: 'Apple Music', id: 'applemusic', link: 'https://music.apple.com/us/artist/brooke-howard/1555424708'},
+    { name: 'Tik-Tok', id: 'tiktok', link: 'https://www.tiktok.com/@itsbrookehoward?_t=8gOr6fnFbCw&_r=1' }
   ]
 
   return (
@@ -42,6 +42,7 @@ export default function Home() {
       </Head>
 
       <main>
+        {/*<div class="firefly"></div>
         <div class="firefly"></div>
         <div class="firefly"></div>
         <div class="firefly"></div>
@@ -55,8 +56,7 @@ export default function Home() {
         <div class="firefly"></div>
         <div class="firefly"></div>
         <div class="firefly"></div>
-        <div class="firefly"></div>
-        <div class="firefly"></div>
+        <div class="firefly"></div>*/}
 
         <Header />
 
