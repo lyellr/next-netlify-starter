@@ -7,8 +7,8 @@ export default function Song({ name, id, artist, spotify }) {
         <>
         <div className="p-8">
             <a href= {spotify} target="_blank">
-                <Image
-                    src={'/../public/images/' + id + '.jpg'}
+                <Image 
+                    src={'/images/' + id + '.jpg'}
                     width={400}
                     height={400}
                     alt={name}

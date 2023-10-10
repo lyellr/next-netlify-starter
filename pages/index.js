@@ -32,6 +32,13 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet"></link>
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="/../public/favicons/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/../public/favicons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/../public/favicons/favicon-16x16.png" />
+        <link rel="manifest" href="/../public/favicons/site.webmanifest" />
+        <meta name="theme-color" content="#ffffff"></meta>
+        
       </Head>
 
       <main>
@@ -59,7 +66,7 @@ export default function Home() {
               <div className="p-5">
                 <a href={social.link} target='_blank'>
                   <Image
-                    src={'/../public/images/socials/' + social.id + '-w500.png'}
+                    src={'/images/socials/' + social.id + '-w500.png'}
                     width={30}
                     height={30}
                     alt={social.name}
