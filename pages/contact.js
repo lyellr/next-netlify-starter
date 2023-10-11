@@ -10,7 +10,7 @@ export default function Content() {
   return (
     <div className>
       <StickyTop />
-      <div className="container mt-20 max-w-screen-2xl m-auto">
+      <div className="container sm:mt-20 max-w-screen-2xl m-auto">
         <Head>
           <title>Brooke Howard</title>
           <meta name="title" content="Brooke Howard" />
