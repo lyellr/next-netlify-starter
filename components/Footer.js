@@ -1,8 +1,8 @@
-import styles from './Footer.module.css'
+import Socials from './Socials'
 
 export default function Footer() {
   return (
-    <>
-    </>
-  )
+    <div className=''>
+    </div>
+  );
 }

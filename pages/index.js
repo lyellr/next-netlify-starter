@@ -1,8 +1,11 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
+import StickyTop from '@components/StickyTop'
 import Song from '@components/Song'
 import Image from 'next/image'
+import Link from 'next/link'
+import Nav from '@components/Nav'
 
 
 export default function Home() {
@@ -17,83 +20,51 @@ export default function Home() {
     { name: 'Magic', id: 'magic', artist: 'Brooke Howard', spotify: 'https://open.spotify.com/track/18hbvXGsy23F7UjNBL0ruE?si=d82fb5d18d0e41d7' }
   ]
 
-  const socials = [
-    { name: 'Instagram', id: 'instagram', link: 'https://www.instagram.com/brocklee/' },
-    { name: 'Spotify', id: 'spotify', link: 'https://open.spotify.com/artist/2LvxnjW2spHC23Ue7WUMiH?si=OZI4a7eGQ-iPHlZ4StujUw'},
-    { name: 'Apple Music', id: 'applemusic', link: 'https://music.apple.com/us/artist/brooke-howard/1555424708'},
-    { name: 'Tik-Tok', id: 'tiktok', link: 'https://www.tiktok.com/@itsbrookehoward?_t=8gOr6fnFbCw&_r=1' }
-  ]
-
   return (
-    <div className="container mt-20 max-w-screen-2xl m-auto">
-      <Head>
-        <title>Brooke Howard</title>
-        <meta name="title" content="Brooke Howard" />
-        <meta name="description" content="Brooke Howard is an artist based in Los Angeles, CA." />
+    <div>
+      <StickyTop />
+      <div className="container sm:mt-20 max-w-screen-2xl m-auto">
+        <Head>
+          <title>Brooke Howard</title>
+          <meta name="title" content="Brooke Howard" />
+          <meta name="description" content="Brooke Howard is an artist based in Los Angeles, CA." />
 
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet"></link>
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
-        <link rel="manifest" href="/favicons/site.webmanifest" />
-        <meta name="theme-color" content="#ffffff"></meta>
-        
-      </Head>
+          <link rel="icon" href="/favicon.ico" />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@700&display=swap" rel="stylesheet"></link>
+          
+          <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+          <link rel="manifest" href="/favicons/site.webmanifest" />
+          <meta name="theme-color" content="#ffffff"></meta>
+          
+        </Head>
 
-      <main>
-        {/*<div class="firefly"></div>
-        <div class="firefly"></div>
-        <div class="firefly"></div>
-        <div class="firefly"></div>
-        <div class="firefly"></div>
-        <div class="firefly"></div>
-        <div class="firefly"></div>
-        <div class="firefly"></div>
-        <div class="firefly"></div>
-        <div class="firefly"></div>
-        <div class="firefly"></div>
-        <div class="firefly"></div>
-        <div class="firefly"></div>
-        <div class="firefly"></div>
-        <div class="firefly"></div>*/}
+        <main>
 
-        <Header />
+          <Header />
 
-        <div className="flex flex-wrap justify-center mt-3 mb-0 pb-0">
-          {socials.map((social) => {
+          <Nav selected='releases' />
+
+          <div className="flex flex-wrap justify-center">
+            <Song name='GIMME' id='gimme' artist='Brooke Howard' spotify='https://orcd.co/gimme' />
+            {songs.map((song) => {
             return (
-              <div className="p-5">
-                <a href={social.link} target='_blank'>
-                  <Image
-                    src={'/images/socials/' + social.id + '-w500.png'}
-                    width={30}
-                    height={30}
-                    alt={social.name}
-                    className="cursor-pointer hover:shadow-xl transition duration-500 ease-in-out transform opacity-80 hover:opacity-100"
-                  />
-                </a>
-              </div>
+              <Song
+                name={song.name}
+                id={song.id}
+                artist={song.artist}
+                spotify={song.spotify}
+              />
             );
           })}
-        </div>
-        <div className="flex flex-wrap justify-center pb-10">
-          <Song name='GIMME' id='gimme' artist='Brooke Howard' spotify='https://orcd.co/gimme' />
-          {songs.map((song) => {
-          return (
-            <Song
-              name={song.name}
-              id={song.id}
-              artist={song.artist}
-              spotify={song.spotify}
-            />
-          );
-        })}
-        </div>
-      </main>
+          </div>
+        </main>
+      </div>
     </div>
+
+
   )
 }

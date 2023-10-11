@@ -4,8 +4,7 @@ import Link from "next/link";
 export default function Song({ name, id, artist, spotify }) {
 
     return (
-        <>
-        <div className="p-8">
+        <div className="p-8" key={id}>
             <a href= {spotify} target="_blank">
                 <Image 
                     src={'/images/' + id + '.jpg'}
@@ -16,6 +15,5 @@ export default function Song({ name, id, artist, spotify }) {
                 />
             </a>
         </div>
-        </>
     )   
 }
