@@ -1,14 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-html {
-  background-color: #15011B;
-}
-
-h1 {
-  font-family: 'Qwitcher Grypen', cursive;
-  font-size: 5em
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2C3E50;
 }
 
 canvas#ghost {

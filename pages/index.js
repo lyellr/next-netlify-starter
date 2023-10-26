@@ -10,6 +10,7 @@ import Nav from '@components/Nav'
 
 export default function Home() {
   const songs = [
+    { name: 'GIMME (feat. lye.ll)', id: 'lavender', artist: 'Brooke Howard', spotify: 'https://open.spotify.com/track/4lEADIh899dcWmza1jbr3e?si=54461c7dc4d44c7a' },
     { name: 'Lavender', id: 'lavender', artist: 'Brooke Howard', spotify: 'https://open.spotify.com/track/2xAV3PYShkeveVZ4vczG3s?si=1b7bf13fb9f9409e' },
     { name: 'Crawlin', id: 'crawlin', artist: 'Brooke Howard', spotify: 'https://open.spotify.com/track/2CsTErdvL58h29eenqBdps?si=7736876f656a44ef' },
     { name: 'Hallucinating', id: 'hallucinating', artist: 'Brooke Howard', spotify: 'https://open.spotify.com/track/2d9vUoptceUm4fnukCLRgT?si=2d1faccc34e84316' },
@@ -49,7 +50,6 @@ export default function Home() {
           <Nav selected='releases' />
 
           <div className="flex flex-wrap justify-center">
-            <Song name='GIMME' id='gimme' artist='Brooke Howard' spotify='https://orcd.co/gimme' />
             {songs.map((song) => {
             return (
               <Song
