@@ -1,0 +1,3 @@
+# Redirects from what the browser requests to what we serve
+/qr            /
+/spotify       https://open.spotify.com/artist/2LvxnjW2spHC23Ue7WUMiH?si=artd16EDRmexSCmiBMU7Kw
