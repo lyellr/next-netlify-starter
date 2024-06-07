@@ -83,6 +83,6 @@ canvas#ghost {
     display: block;
     grid-template-columns: repeat(500px);
     grid-auto-rows: 500px;
-    width: 80%;
+    width: 90%;
   }
 }
