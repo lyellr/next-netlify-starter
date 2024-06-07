@@ -54,7 +54,7 @@ export default function Home() {
 
           <Nav selected='releases' />
 
-          <div className="flex flex-wrap justify-center">
+          <div className="gallery-container">
             {albums.map((album) => {
             return (
               <Album
